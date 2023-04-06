@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import-normalize;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 62.5%;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Poppins';
+  font-style: normal;
+  line-height: 24px;
+}
+
+.activeNavItem::before {
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  height: 100%;
+  left: 0;
+  background: var(--background);
+}
+#editior {
+  background-color: #1f1d2c;
+  border-radius: 15px;
+  font-family: 'Cascadia Code', 'monospace', monospace;
+  min-height: 350px;
+  width: 80vw;
+  border: 2.5px solid #5c538c;
+  max-width: 80vw;
+  font-size: 17px;
+}
+.editor #codeArea {
+  outline: none;
+  padding-left: 60px !important;
+}
+
+.editor pre {
+  padding-left: 60px !important;
+}
+.editor .editorLineNumber {
+  position: absolute;
+  left: 0px;
+  color: #cccccc;
+  text-align: right;
+  width: 30px;
+  font-weight: 100;
+}
